@@ -17,8 +17,8 @@ fi
 
 echo 'Initializing Metabase Container ...'
 
-docker run -d -p 3000:3000 -p 2222:22 --name metabase_3000 metabase.centos6 
-sleep 5
-docker run -d -p 3001:3000 -p 2223:22 --name metabase_3001 metabase.centos6
+docker run --restart=always -d -p 3000:3000 -p 2222:22 --name metabase_3000 metabase.centos6 
+sleep 10
+docker run --restart=always -d -p 3001:3000 -p 2223:22 --name metabase_3001 metabase.centos6
 sleep 5
 docker ps -a

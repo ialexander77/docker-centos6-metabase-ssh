@@ -34,6 +34,7 @@ Get container ID:
 Keep in mind to change variables in Docker 'ENV' section:
 
 The default values are, you can login to container using root or sshin user:
+
     SSH_ROOTPASS='P@ssw0rd'
     SSH_USERNAME='sshin'
     SSH_USERPASS='P@ssw0rd'
